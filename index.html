@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Europeans Came to India - Interactive Presentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="presentation-container">
+        <!-- Header with navigation and controls -->
+        <header class="presentation-header">
+            <div class="header-left">
+                <h1 class="presentation-title">How Europeans Came to India</h1>
+            </div>
+            <div class="header-right">
+                <button class="btn btn--sm" id="fullscreenBtn">Full Screen</button>
+                <button class="btn btn--sm" id="notesToggle">Speaker Notes</button>
+            </div>
+        </header>
+
+        <!-- Progress bar -->
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <!-- Main presentation area -->
+        <main class="presentation-main">
+            <!-- Slide container -->
+            <div class="slide-container" id="slideContainer">
+                
+                <!-- Slide 1: Title -->
+                <div class="slide active" data-slide="1">
+                    <div class="slide-content title-slide">
+                        <h1>How Europeans Came to India</h1>
+                        <h2>The Age of European Colonialism (1498-1947)</h2>
+                        <div class="slide-image">
+                            <img src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/825352ab-6259-42aa-8467-531bb69e282b.png" alt="Vasco da Gama's historic arrival in India in 1498">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2: Timeline Overview -->
+                <div class="slide" data-slide="2">
+                    <div class="slide-content">
+                        <h2>Timeline Overview</h2>
+                        <ul class="timeline-list">
+                            <li>1498: Portuguese arrive (Vasco da Gama)</li>
+                            <li>1605: Dutch establish first factory</li>
+                            <li>1664: French East India Company formed</li>
+                            <li>1600: British East India Company founded</li>
+                            <li>1757: Battle of Plassey - British dominance begins</li>
+                            <li>1947: Indian Independence</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Slide 3: Why Europe Wanted India -->
+                <div class="slide" data-slide="3">
+                    <div class="slide-content">
+                        <h2>Why Did Europe Want India?</h2>
+                        <div class="content-with-image">
+                            <div class="content-text">
+                                <ul>
+                                    <li>Spice Trade - pepper, cinnamon, cardamom</li>
+                                    <li>Textiles and luxury goods</li>
+                                    <li>Bypass Arab middlemen</li>
+                                    <li>Massive profits (up to 90% for spices)</li>
+                                    <li>Strategic location for Asian trade</li>
+                                </ul>
+                            </div>
+                            <div class="content-image">
+                                <img src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/7af8a309-5050-45fe-a7ad-0bfa9b302bbb.png" alt="The economic motivation: profitable spice trade">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 4: Age of Exploration -->
+                <div class="slide" data-slide="4">
+                    <div class="slide-content">
+                        <h2>The Age of Exploration</h2>
+                        <ul>
+                            <li>15th century: Europeans seek sea routes to Asia</li>
+                            <li>Fall of Constantinople (1453) disrupted land routes</li>
+                            <li>Portugal leads maritime exploration</li>
+                            <li>Competition for trade dominance</li>
+                            <li>Advanced naval technology gave Europeans advantage</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Slide 5: Portuguese Arrival -->
+                <div class="slide" data-slide="5">
+                    <div class="slide-content">
+                        <h2>Portuguese Arrival (1498)</h2>
+                        <div class="content-with-image">
+                            <div class="content-text">
+                                <ul>
+                                    <li>Vasco da Gama lands at Calicut (Kozhikode) - May 20, 1498</li>
+                                    <li>First European to reach India by sea</li>
+                                    <li>Met by Zamorin (local ruler)</li>
+                                    <li>Opened direct maritime trade route</li>
+                                    <li>End of Arab-Venetian trade monopoly</li>
+                                </ul>
+                            </div>
+                            <div class="content-image">
+                                <img src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/825352ab-6259-42aa-8467-531bb69e282b.png" alt="Vasco da Gama's historic arrival in India in 1498">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 6: Portuguese Dominance -->
+                <div class="slide" data-slide="6">
+                    <div class="slide-content">
+                        <h2>Portuguese Dominance (1500-1600)</h2>
+                        <ul>
+                            <li>1510: Captured Goa from Bijapur Sultanate</li>
+                            <li>Built forts along Malabar coast</li>
+                            <li>Established Estado da Índia</li>
+                            <li>St. Francis Xavier brought Christianity (1542)</li>
+                            <li>Controlled key ports: Goa, Diu, Daman</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Slide 7: Dutch Arrival -->
+                <div class="slide" data-slide="7">
+                    <div class="slide-content">
+                        <h2>Dutch Arrival (1605)</h2>
+                        <ul>
+                            <li>Dutch East India Company (VOC) formed 1602</li>
+                            <li>First factory at Masulipatnam (1605)</li>
+                            <li>World's first multinational corporation</li>
+                            <li>Focused on spice trade monopoly</li>
+                            <li>Gradually lost to British by 1825</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Slide 8: French Entry -->
+                <div class="slide" data-slide="8">
+                    <div class="slide-content">
+                        <h2>French Entry (1664)</h2>
+                        <ul>
+                            <li>French East India Company established 1664</li>
+                            <li>François Martin founded Pondicherry (1674)</li>
+                            <li>Chief settlement in India</li>
+                            <li>Also controlled Mahe, Yanam, Karaikal</li>
+                            <li>Lost to British in Anglo-French wars</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Slide 9: British East India Company -->
+                <div class="slide" data-slide="9">
+                    <div class="slide-content">
+                        <h2>British East India Company (1600)</h2>
+                        <ul>
+                            <li>Founded December 31, 1600 by royal charter</li>
+                            <li>First trading post at Surat (1608)</li>
+                            <li>Three presidency towns: Calcutta, Bombay, Madras</li>
+                            <li>From trading company to ruling power</li>
+                            <li>Lasted until 1858</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Slide 10: Competition for Control -->
+                <div class="slide" data-slide="10">
+                    <div class="slide-content">
+                        <h2>Competition for Control</h2>
+                        <div class="content-with-image">
+                            <div class="content-text">
+                                <ul>
+                                    <li>Multiple European powers competed</li>
+                                    <li>Anglo-French rivalry most intense</li>
+                                    <li>Each built forts and armies</li>
+                                    <li>Local rulers played Europeans against each other</li>
+                                    <li>Winner would control vast wealth</li>
+                                </ul>
+                            </div>
+                            <div class="content-image">
+                                <img src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/1f5e69d9-3cb7-488f-afe9-af1bce619a20.png" alt="European powers competing for Indian spice trade">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 11: Battle of Plassey -->
+                <div class="slide" data-slide="11">
+                    <div class="slide-content">
+                        <h2>Battle of Plassey (1757) - The Turning Point</h2>
+                        <div class="content-with-image">
+                            <div class="content-text">
+                                <ul>
+                                    <li>Robert Clive vs. Nawab Siraj-ud-Daulah</li>
+                                    <li>Clive's 3,000 troops vs. 50,000 enemy forces</li>
+                                    <li>Victory through conspiracy and betrayal</li>
+                                    <li>Mir Jafar became puppet Nawab</li>
+                                    <li>Britain gained control of wealthy Bengal</li>
+                                </ul>
+                            </div>
+                            <div class="content-image">
+                                <img src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/d351ff3a-fbf3-4bfd-85e8-8e51df9f876f.png" alt="The decisive Battle of Plassey in 1757">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 12: How Britain Won -->
+                <div class="slide" data-slide="12">
+                    <div class="slide-content">
+                        <h2>How Britain Won</h2>
+                        <ul>
+                            <li>Superior naval power</li>
+                            <li>Better military organization</li>
+                            <li>Political alliances and bribery</li>
+                            <li>Economic resources from Bengal</li>
+                            <li>Defeated French in Seven Years War</li>
+                            <li>Subsidiary Alliance System</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Slide 13: Indian Resistance -->
+                <div class="slide" data-slide="13">
+                    <div class="slide-content">
+                        <h2>Indian Resistance</h2>
+                        <div class="content-with-image">
+                            <div class="content-text">
+                                <ul>
+                                    <li>Tipu Sultan - 'Tiger of Mysore'</li>
+                                    <li>Used modern weapons including rockets</li>
+                                    <li>Sought alliances with France and Ottoman Empire</li>
+                                    <li>Four Anglo-Mysore Wars (1767-1799)</li>
+                                    <li>Died fighting at Seringapatam (1799)</li>
+                                </ul>
+                            </div>
+                            <div class="content-image">
+                                <img src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/5ba5b2f9-3ecc-4904-97ef-a3d4bce2a1fb.png" alt="Tipu Sultan, the Tiger of Mysore, resisting British colonialism">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 14: Colonial Administration -->
+                <div class="slide" data-slide="14">
+                    <div class="slide-content">
+                        <h2>Colonial Administration</h2>
+                        <ul>
+                            <li>Company Rule (1757-1858)</li>
+                            <li>Governor-Generals appointed</li>
+                            <li>Civil and military services</li>
+                            <li>Revenue collection systems</li>
+                            <li>English law and education</li>
+                            <li>Infrastructure development</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Slide 15: Economic Impact -->
+                <div class="slide" data-slide="15">
+                    <div class="slide-content">
+                        <h2>Economic Impact</h2>
+                        <ul>
+                            <li>Massive wealth extraction to Europe</li>
+                            <li>De-industrialization of India</li>
+                            <li>Agriculture focused on cash crops</li>
+                            <li>Monopoly over trade</li>
+                            <li>Decline of traditional industries</li>
+                            <li>Famines due to policy failures</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Slide 16: Cultural Exchange -->
+                <div class="slide" data-slide="16">
+                    <div class="slide-content">
+                        <h2>Cultural Exchange</h2>
+                        <div class="content-with-image">
+                            <div class="content-text">
+                                <ul>
+                                    <li>European languages (English, Portuguese, French)</li>
+                                    <li>Christianity spread</li>
+                                    <li>Western education system</li>
+                                    <li>Architecture - Indo-European styles</li>
+                                    <li>Legal systems</li>
+                                    <li>Scientific knowledge exchange</li>
+                                </ul>
+                            </div>
+                            <div class="content-image">
+                                <img src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/c83c163c-959b-48eb-97b8-20853cc2261a.png" alt="European colonial settlements across India">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 17: Timeline Summary -->
+                <div class="slide" data-slide="17">
+                    <div class="slide-content">
+                        <h2>Timeline Summary</h2>
+                        <ul>
+                            <li>1498-1600: Portuguese dominance</li>
+                            <li>1600-1750: Multiple European powers compete</li>
+                            <li>1757-1858: British East India Company rule</li>
+                            <li>1858-1947: British Crown rule (British Raj)</li>
+                            <li>1947: Independence and Partition</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Slide 18: Path to Independence -->
+                <div class="slide" data-slide="18">
+                    <div class="slide-content">
+                        <h2>Path to Independence</h2>
+                        <ul>
+                            <li>Growing Indian nationalism</li>
+                            <li>Freedom movements and leaders</li>
+                            <li>World Wars weakened European powers</li>
+                            <li>Non-violent resistance movements</li>
+                            <li>1947: India and Pakistan independence</li>
+                            <li>End of European colonial era</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Slide 19: Key Lessons -->
+                <div class="slide" data-slide="19">
+                    <div class="slide-content">
+                        <h2>Key Lessons</h2>
+                        <ul>
+                            <li>Economic motivations drove colonialism</li>
+                            <li>Technological advantages helped Europeans</li>
+                            <li>Disunity among local rulers was exploited</li>
+                            <li>Resistance movements eventually succeeded</li>
+                            <li>Colonial legacy still influences modern India</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Slide 20: Discussion Questions -->
+                <div class="slide" data-slide="20">
+                    <div class="slide-content">
+                        <h2>Discussion Questions</h2>
+                        <ul>
+                            <li>How might Indian history be different if Europeans never arrived?</li>
+                            <li>What were the positive and negative impacts of colonialism?</li>
+                            <li>Why were Europeans successful despite being outnumbered?</li>
+                            <li>How did Indian resistance evolve over time?</li>
+                            <li>What lessons apply to the modern world?</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Speaker notes panel -->
+            <div class="speaker-notes hidden" id="speakerNotes">
+                <h3>Speaker Notes</h3>
+                <div class="notes-content" id="notesContent">
+                    <!-- Notes will be dynamically loaded -->
+                </div>
+            </div>
+        </main>
+
+        <!-- Navigation controls -->
+        <footer class="presentation-footer">
+            <div class="navigation-controls">
+                <button class="btn btn--secondary nav-btn" id="prevBtn">
+                    ← Previous
+                </button>
+                <span class="slide-counter" id="slideCounter">1 / 20</span>
+                <button class="btn btn--secondary nav-btn" id="nextBtn">
+                    Next →
+                </button>
+            </div>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
